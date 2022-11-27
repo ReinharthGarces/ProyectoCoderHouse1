@@ -8,10 +8,10 @@ a{
     color: black;
 }
 body {
-  background-image: url(.././img/posibles-fondos/posible-fondo1.png);
+  background-image: url(.././img/posibles-fondos/posible-fondo4.png);
   background-position: center;
   background-attachment:fixed;
-  background-size: 60vh;
+  background-size: 70vh;
 }
 
 
