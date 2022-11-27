@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>FormularioDeAdopción</title>
+</head>
+
+<body>
+<header>
+  <h1>Gatos&Perros</h1>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="gatos.html">Gatos</a></li>
+      <li><a href="perros.html">Perros</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+  <!--Inicion del Formulario de Adopción-->
+  <form class="formulario-container" data-aos="fade-up">
+    <h2>Formulario De Adopción</h2>
+      <seccion class="formulario-parte1">
+        <h4>1.Datos Personales</h4>
+        <div>
+          <label for="Nombre y apellido">Nombre y Apellido:</label>
+          <input id="Nombre y apellido" type="text" name="Nombre y apellido">
+        </div>
+
+        <div>
+          <label for="Fecha de nacimiento">Fecha De Nacimiento:</label>
+          <input id="Fecha de nacimiento" type="date" name="Fecha De nacimiento">
+        </div>
+
+        <div>
+          <label for="DNI">DNI:</label>
+          <input id="DNI" type="number" name="DNI">
+        </div>
+
+        <div>
+          <label for="Telefono">Telefono:</label>
+          <input id="Telefono" type="tel" name="Telefono">
+        </div>
+
+        <div>
+          <label for="Email 1">Email:</label>
+          <input id="Email 1" type="email" name="Email 1">
+        </div>
+      </seccion>
+
+
+  <!--Inicio parte 2 del Formulario de Adopción-->
+    <seccion class="formulario-parte2">
+      <h4>2.Referencias Personales</h4>
+      <div>
+        <label for="Referencia personal 1">Referencia Personal:</label>
+        <input id="Referencia personal 1" type="text" name="Referencia personal 1">
+        <label for="Telefono 1">Telefono:</label>
+        <input id="Telefono 1" type="tel" name="Telefono 1">
+
+        <label for="Relación o Parentesco 1">Relación o Parentesco:</label>
+        <select name="Relación o Parentesco 1" id="Relación o Parentesco 1">
+        <option value="Amigo">Amigo</option>
+        <option value="Pareja">Pareja</option>
+        <option value="Compañero de trabajo">Compañero de trabajo</option>
+        <option value="Vecino">Vecino</option>
+        <option value="Otro">Otro</option>
+        </select> 
+      </div>  
+
+      <div>
+        <label for="Referencia personal 2">Referencia Personal:</label>
+        <input id="Referencia personal 2" type="text" name="Referencia personal 2">
+
+        <label for="Telefono 2">Telefono:</label>
+        <input id="Telefono 2" type="tel" name="Telefono 2">
+
+        <label for="Relación o Parentesco 2">Relación o Parentesco:</label>
+        <select name="Relación o Parentesco 2" id="Relación o Parentesco 2">
+        <option value="Amigo">Amigo</option>
+        <option value="Pareja">Pareja</option>
+        <option value="Compañero de trabajo">Compañero de trabajo</option>
+        <option value="Vecino">Vecino</option>
+        <option value="Otro">Otro</option>
+        </select> 
+      </div>
+    </seccion>
+
+
+<!--Inicio parte 3 del Formulario de Adopción-->
+    <seccion class="formulario-parte3">
+      <h4>3. Domicilio</h4>
+      <div>
+        <h5>¿Que tipo de domicilio tienes?</h5>
+        <label for="Propiedad horizontal">PH</label>
+        <input id="Propiedad horizontal" type="radio" name="Tipo de hogar" value="Tipo de hogar 1">
+
+        <label for="Departamento con balcon">Departamento con balcón</label>
+        <input id="Departamento con balcon" type="radio" name="Tipo de hogar" value="Tipo de hogar 2">
+
+        <label for="Departamento sin balcon">Departamento sin balcón</label>
+        <input id="Departamento sin balcon" type="radio" name="Tipo de hogar" value="Tipo de hogar 3">
+
+        <label for="Casa con patio">Casa con patio</label>
+        <input id="Casa con patio" type="radio" name="Tipo de hogar" value="Tipo de hogar 4">
+
+        <label for="Casa sin patio">Casa sin patio</label>
+        <input id="Casa sin patio" type="radio" name="Tipo de hogar" value="Tipo de hogar 5">
+      </div>
+
+      <div>
+        <h5>¿Cuantas personas habitan en tu domicilio?</h5>
+        <label for="Una persona">1</label>
+        <input id="Una persona" type="radio" name="Cantidad de personas" value="Cantidad de personas 1">
+
+        <label for="Dos personas">2</label>
+        <input id="Dos personas" type="radio" name="Cantidad de personas" value="Cantidad de personas 2">
+
+        <label for="Mas de dos personas">Otros</label>
+        <input id="Mas de dos personas" type="radio" name="Cantidad de personas" value="Cantidad de personas 3">
+      </div>
+
+      <div>
+        <h5>¿Donde nos conociste y porque quieres adoptar una mascota'</h5>
+        <textarea name="Sobre ti" id="Sobre ti" cols="40" rows="15"></textarea>
+      </div>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Borrar">
+    </seccion>
+    </form>
+  </main>
+  
+  <!--Inicion del footer-->
+  <footer>
+    <p><strong>Si desea hacer donaciones o ser voluntario con el hogar de mascotas GATOS&PERROS dejanos tu mail acá...</strong></p>
+    <div>
+      <form>
+        <label for="Email">Email:</label>
+        <input id="Email" type="email" name="Email">
+        <input type="submit" value="Enviar">
+      </form>
+    </div> 
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
