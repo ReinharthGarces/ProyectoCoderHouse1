@@ -21,26 +21,47 @@ header{
     background: rgb(235,55,3);
     background: linear-gradient(90deg, rgba(235,55,3,1) 26%, rgba(252,152,5,1) 66%, rgba(255,186,0,1) 100%);
     padding: 50px;
-    height: 50px;
+    padding-bottom: 10px;
+    height: 100px;
     border: 3px solid black;
     text-shadow: 1.5px 1.5px wheat;
 }
 header h1 {
-    font-family: 'Pacifico', cursive;
     font-size: 2.5rem;
+    padding-bottom: 20px;
     display: inline-block;
+    font-family: 'Pacifico', cursive;
     width: 80%;
 }
 header nav{
     display: inline-block;
-    margin-right: 40px;
     font-size: 1.1rem;
-    margin-bottom: none;
+    text-align: end;
 }
 header ul li{
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 20px;
+    font-family: 'Pacifico', cursive;
 }
+
+/*--Inicio header para Tablets--*/
+@media (min-width: 768px) and (max-width: 1200px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  header h1 {
+    display: flex;
+}
+  header nav{
+    display: flex;
+    justify-content: flex-end;
+
+  }
+}
+
+
+
 
 
 /*--Sobre Nosotros--*/
