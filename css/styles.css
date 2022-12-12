@@ -1,29 +1,29 @@
-*{
-    margin: 0;
-    padding: o;
-    box-sizing: 0;
+* {
+  margin: 0;
+  padding: o;
+  box-sizing: 0;
 }
-a{
-    text-decoration: none;
-    color: black;
+
+a {
+  text-decoration: none;
+  color: black;
 }
+
 body {
   background-image: url(.././img/posibles-fondos/posible-fondo4.png);
   background-position: center;
-  background-attachment:fixed;
+  background-attachment: fixed;
   background-size: 70vh;
 }
 
-
 /*--Header--*/
-header{
+header {
   display: flex;
   justify-content: space-between;
-  background: linear-gradient(90deg, rgba(235,55,3,1) 26%, rgba(252,152,5,1) 66%, rgba(255,186,0,1) 100%);
+  background: linear-gradient(90deg, rgb(235, 55, 3) 26%, rgb(252, 152, 5) 66%, rgb(255, 186, 0) 100%);
   padding: 50px;
   padding-bottom: 25px;
   border: 3px solid black;
-  font-family: 'Pacifico', cursive;
 }
 header h1 {
   align-items: center;
@@ -31,14 +31,15 @@ header h1 {
   text-shadow: 1.5px 1.5px wheat;
   padding-bottom: 20px;
   display: inline-block;
+  font-family: "pacifico", cursive;
 }
-header nav{
+header nav {
   display: flex;
   align-items: flex-end;
   font-size: 1rem;
   text-shadow: 1.1px 1.1px wheat;
 }
-header ul li{
+header ul li {
   display: inline-block;
   padding: 3px;
   margin-right: 20px;
@@ -46,8 +47,8 @@ header ul li{
   box-shadow: 3px 3px black;
 }
 header ul li:hover {
-background-color: wheat;
-opacity: 95%;
+  background-color: wheat;
+  opacity: 95%;
 }
 
 /*--Inicio header para telefonos--*/
@@ -55,6 +56,8 @@ opacity: 95%;
   header {
     flex-direction: column;
     padding: 40px 20px;
+    justify-content: center;
+    align-items: center;
   }
   header nav {
     display: flex;
@@ -62,7 +65,7 @@ opacity: 95%;
     font-size: 0.9rem;
     text-shadow: 0.8px 0.8px wheat;
   }
-  header ul li{
+  header ul li {
     display: inline-block;
     padding: 2px;
     margin-right: 6px;
@@ -70,60 +73,89 @@ opacity: 95%;
     box-shadow: 2px 2px black;
   }
   header ul li:hover {
-  background-color: wheat;
-  opacity: 95%;
+    background-color: wheat;
+    opacity: 95%;
   }
 }
+/*--Footer--*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(90deg, rgb(235, 55, 3) 26%, rgb(252, 152, 5) 66%, rgb(255, 186, 0) 100%);
+  margin-top: 10vh;
+  padding: 40px;
+  height: justify;
+  border: 3px solid black;
+}
+footer p {
+  text-shadow: 1.1px 1.1px wheat;
+  padding-right: 5%;
+}
+footer div {
+  text-align: end;
+}
 
-
+/*--Inicio footer para Telefonos--*/
+@media (min-width: 320px) and (max-width: 767px) {
+  footer {
+    flex-direction: column;
+    font-size: 0.9rem;
+    padding: 40px 20px;
+    gap: 20px;
+  }
+  footer p {
+    text-shadow: 0.4px 0.4px wheat;
+    padding-right: 10%;
+    justify-content: flex-start;
+  }
+}
 /*--Sobre Nosotros--*/
-.nosotros{
-    text-align: center;
-    padding: 100px;
+.nosotros {
+  text-align: center;
+  padding: 100px;
 }
-.nosotros h2{
-    font-family: 'Pacifico', cursive;
-    text-align: center;
-    font-size: 3rem;
-    padding-bottom: 30px;
-    text-shadow: 1.5px 1.5px wheat;
+.nosotros h2 {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 30px;
+  text-shadow: 1.5px 1.5px wheat;
 }
-.nosotros p{
-    padding: 10px;
-    font-size: 1.3rem;
+.nosotros p {
+  padding: 10px;
+  font-size: 1.3rem;
 }
-
 
 /*--Tarjetas de imagenes--*/
-.tarjeta1{
-    display: inline-block;
-    height: 250px;
-    width: 45%;
-    border-color: black;
+.tarjeta1 {
+  display: inline-block;
+  height: 250px;
+  width: 45%;
+  border-color: black;
 }
-.tarjeta1 img{
-    width: 50%;
-    display: inline-block;
-    margin-left: 250px;
-    border-radius: 30px;
-    border: 2px solid #E14D2A;
-    box-shadow: 5px 5px #E14D2A;
-}
-.tarjeta2{
-    display: inline-block;
-    height: 250px;
-    width: 45%;
-    border-color: black;
-}
-.tarjeta2 img{
-    width: 50%;
-    display: inline-block;
-    margin-left: 250px;
-    border-radius: 30px;
-    border: 2px solid #E14D2A;
-    box-shadow: 5px 5px #E14D2A;
+.tarjeta1 img {
+  width: 50%;
+  display: inline-block;
+  margin-left: 250px;
+  border-radius: 30px;
+  border: 2px solid #E14D2A;
+  box-shadow: 5px 5px #E14D2A;
 }
 
+.tarjeta2 {
+  display: inline-block;
+  height: 250px;
+  width: 45%;
+  border-color: black;
+}
+.tarjeta2 img {
+  width: 50%;
+  display: inline-block;
+  margin-left: 250px;
+  border-radius: 30px;
+  border: 2px solid #E14D2A;
+  box-shadow: 5px 5px #E14D2A;
+}
 
 /*--Creando Hogares--*/
 .hogares {
@@ -132,7 +164,7 @@ opacity: 95%;
 .hogares h2 {
   margin-top: 100px;
   text-align: center;
-  font-family: 'Pacifico', cursive; 
+  font-family: "Pacifico", cursive;
   font-size: 3rem;
   padding-bottom: 30px;
   text-shadow: 1.5px 1.5px wheat;
@@ -144,12 +176,12 @@ opacity: 95%;
   font-size: 1.3rem;
 }
 
-
 /*--Tarjetas de ejemplos--*/
-.flex-ejemplos{
+.flex-ejemplos {
   display: flex;
   justify-content: space-around;
 }
+
 .ejemplo1 {
   display: inline-block;
   background-color: wheat;
@@ -223,71 +255,32 @@ opacity: 95%;
   font-size: 1.1rem;
 }
 
-
-/*--Footer--*/
-footer {
-    display: flex;
-    justify-content: space-between;
-    background: linear-gradient(90deg, rgba(235,55,3,1) 26%, rgba(252,152,5,1) 66%, rgba(255,186,0,1) 100%);
-    margin-top: 10vh;
-    padding: 40px;
-    height: justify;
-    border: 3px solid black;
-  }
-  footer p{
-    text-shadow: 1.1px 1.1px wheat;
-    padding-right: 5%;
-  }
-  footer div {
-    text-align: end;
-  }
-  
-
-/*--Inicio footer para Telefonos--*/
-@media (min-width: 320px) and (max-width: 767px) {
-  footer {
-    flex-direction: column;
-    font-size: 0.9rem;
-    padding: 40px 20px;
-    gap: 20px;
-  }
-  footer p{
-    text-shadow: 0.4px 0.4px wheat;
-    padding-right: 10%;
-    justify-content: flex-start;
-  }
-}
-
-
-
 /*--Tarjetas de animales--*/
 .grid-container {
   display: grid;
   row-gap: 10vh;
   margin: 5vh;
 }
-.grid-container h2{
-  font-family: 'Pacifico', cursive;
+.grid-container h2 {
+  font-family: "Pacifico", cursive;
   text-align: center;
   font-size: 2.5rem;
   text-shadow: 1.5px 1.5px wheat;
 }
+
 .tarjetas {
   height: 450px;
   display: grid;
   grid-template-rows: 10% 70% 20%;
   grid-template-columns: 50% 50%;
-  grid-template-areas:
-  "descripcion descripcion"
-  "informacion imagen"
-  "caracteristicas solicitud";
+  grid-template-areas: "descripcion descripcion" "informacion imagen" "caracteristicas solicitud";
   background-color: wheat;
   opacity: 95%;
   border: 5px solid black;
   border-radius: 20px;
 }
 .tarjetas h3 {
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   font-size: 1.5rem;
   grid-area: descripcion;
   display: flex;
@@ -323,7 +316,7 @@ footer {
   border: 2px solid black;
   box-shadow: 10px 10px black;
 }
-.tarjetas spam {
+.tarjetas span {
   grid-area: solicitud;
   display: flex;
   justify-content: center;
@@ -334,7 +327,7 @@ footer {
   box-shadow: 5px 5px black;
 }
 .tarjetas button:hover {
-  background-color: rgba(235,55,3,1);
+  background-color: rgb(235, 55, 3);
   opacity: 95%;
 }
 
@@ -343,17 +336,23 @@ footer {
   .tarjetas img {
     width: 280px;
     height: 180px;
-}
-.tarjetas p {
+  }
+  .tarjetas p {
     font-size: 1rem;
+  }
 }
-}
-
 /*--Inicio tarjetas de animales para Telefonos--*/
 @media (min-width: 320px) and (max-width: 767px) {
-  .grid-container{
+  .grid-container {
     margin: 1vh;
     row-gap: 2vh;
+    justify-content: center;
+  }
+  .grid-container h2 {
+    font-family: "Pacifico", cursive;
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 1.2px 1.2px wheat;
   }
   .tarjetas {
     height: 50vh;
@@ -361,12 +360,6 @@ footer {
     display: flex;
     flex-direction: column;
     overflow: auto;
-  }
-  .grid-container h2 {
-    font-family: 'Pacifico', cursive;
-    text-align: center;
-    font-size: 2.5rem;
-    text-shadow: 1.2px 1.2px wheat;
   }
   .tarjetas ul {
     font-size: 0.9em;
@@ -386,86 +379,28 @@ footer {
     height: 150px;
     box-shadow: 3px 3px black;
     border: 1px solid black;
-}
-.tarjetas spam {
+  }
+  .tarjetas span {
     order: 2;
+  }
 }
-}
-
-
-/*--Inicio de formulario*/
-.formulario-container {
-  display: grid;
-  background-color: wheat;
-  opacity: 95%;
-  margin: 20vh;
-  height: justify;
-  padding: 10vh;
-  margin-bottom: 10vh;
-  border-radius: 20px;
-  border: 3px solid black;
-  row-gap: 2em;
-  font-size: 1.2rem;
-}
-.formulario-container h2 {
-  font-family: 'Pacifico', cursive;
-  text-align: center;
-  font-size: 2.5rem;
-  text-shadow: 2px 2px white;
-}
-.formulario-container h4 {
-  font-family: 'Pacifico', cursive;
-  text-align: justify;
-  font-size: 1.5rem;
-  text-shadow: 2px 2px white;
-  padding: 5px;
-}
-.formulario-container h5 {
-  text-align: justify;
-  font-size: 1.2rem;
-}
-.formulario-container div {
-  padding: 8px;
-}
-.formulario-parte1{
-  border: 3px solid black;
-  border-radius: 20px;
-  padding: 3em;
-}
-.formulario-parte2{
-  border: 3px solid black;
-  border-radius: 20px;
-  padding: 1em;
-}
-.formulario-parte3{
-  border: 3px solid black;
-  border-radius: 20px;
-  padding: 1em;
-}
-
-
-
 /*--Inicio seccion de contacto*/
 .grid-contacto {
   height: 80vh;
   display: grid;
   grid-template-rows: 10% 70% 20%;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-  "contactanos contactanos"
-  "imagen redes"
-  "ubicacion ubicacion"
-  "sugerencias sugerencias";
+  grid-template-areas: "contactanos contactanos" "imagen redes" "ubicacion ubicacion" "sugerencias sugerencias";
   row-gap: 3em;
   width: auto;
   height: auto;
   margin: 5% 10%;
   padding: 50px;
-  font-family: 'Pacifico', cursive;
   font-size: 2rem;
+  font-family: "pacifico", cursive;
   text-shadow: 2px 2px white;
 }
-.encabezado-contacto {
+.grid-contacto .encabezado-contacto {
   grid-area: contactanos;
   display: flex;
   flex-direction: column;
@@ -474,7 +409,7 @@ footer {
   padding: 10px;
 }
 .grid-contacto h3 {
-background-color: wheat;
+  background-color: wheat;
   opacity: 95%;
   border-radius: 10px;
   padding: 1%;
@@ -484,13 +419,13 @@ background-color: wheat;
 .grid-contacto img {
   grid-area: imagen;
   display: flex;
-  width: 600px;
+  width: 500px;
   height: justify;
-  justify-self:flex-end;
+  justify-self: flex-end;
   border-radius: 20px;
   padding: 10px;
 }
-.redes-sociales {
+.grid-contacto .redes-sociales {
   grid-area: redes;
   display: flex;
   flex-direction: column;
@@ -498,6 +433,8 @@ background-color: wheat;
   align-items: center;
   padding: 10px;
 }
+
+/*--Seccion ubicacion*/
 .ubicacion {
   grid-area: ubicacion;
   display: flex;
@@ -507,10 +444,12 @@ background-color: wheat;
   padding: 10px;
 }
 .ubicacion iframe {
-border-radius: 20px;
-box-shadow: 5px 5px black;
-padding-top: 2%;
+  border-radius: 20px;
+  box-shadow: 5px 5px black;
+  padding-top: 2%;
 }
+
+/*--Seccion sugerencias*/
 .sugerencias {
   grid-area: sugerencias;
   display: flex;
@@ -524,6 +463,107 @@ padding-top: 2%;
   border-radius: 10px;
   width: 50vh;
 }
-.sugerencias input { 
+.sugerencias input {
   box-shadow: 3px 3px black;
+}
+
+/*--Inicio de formulario*/
+.formulario-container {
+  display: grid;
+  background-color: wheat;
+  opacity: 95%;
+  margin: 20vh;
+  height: justify;
+  padding: 10vh;
+  margin-bottom: 10vh;
+  border-radius: 20px;
+  border: 3px solid black;
+  row-gap: 2em;
+}
+.formulario-container h2 {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px white;
+}
+.formulario-container h4 {
+  font-family: "Pacifico", cursive;
+  text-align: justify;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px white;
+  padding: 5px;
+}
+.formulario-container h5 {
+  text-align: justify;
+  font-size: 1.2rem;
+  padding: 1%;
+}
+.formulario-container div {
+  padding: 8px;
+}
+
+.formulario-partes {
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 2em;
+}
+
+/*--Inicio del formulario de adopcion para Tabs--*/
+@media (min-width: 768px) and (max-width: 1200px) {
+  .formulario-container {
+    margin: 10vh;
   }
+  .formulario-container h5 {
+    text-align: start;
+    padding: 1%;
+  }
+  .formulario-container div {
+    padding: 2%;
+  }
+  .telefono {
+    display: block;
+    padding: 2%;
+  }
+}
+/*--Inicio del formulario de adopcion para Telefono--*/
+@media (min-width: 320px) and (max-width: 767px) {
+  .formulario-container {
+    margin: 3vh;
+    padding: 3vh;
+    text-align: center;
+    font-size: smaller;
+  }
+  .formulario-container h2 {
+    font-size: 1.2rem;
+    text-align: justify;
+    text-shadow: 1px 1px white;
+  }
+  .formulario-container h4 {
+    text-align: center;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px white;
+    padding: 1px;
+  }
+  .formulario-container div {
+    padding: 1%;
+  }
+  .formulario-container h5 {
+    text-align: center;
+    font-size: 1rem;
+    padding: 1%;
+  }
+  #sobre-ti {
+    width: 45vw;
+    height: 20vh;
+  }
+  .telefono {
+    display: block;
+    padding: 1%;
+  }
+  .formulario-partes {
+    padding: 1rem;
+    overflow: auto;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

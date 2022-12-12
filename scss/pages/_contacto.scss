@@ -1,0 +1,87 @@
+
+/*--Inicio seccion de contacto*/
+.grid-contacto {
+    height: 80vh;
+    display: grid;
+    grid-template-rows: 10% 70% 20%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "contactanos contactanos"
+    "imagen redes"
+    "ubicacion ubicacion"
+    "sugerencias sugerencias";
+    row-gap: 3em;
+    width: auto;
+    height: auto;
+    margin: 5% 10%;
+    padding: 50px;
+    font-size: 2rem;
+    font-family: $first-font;
+    text-shadow: 2px 2px white;
+  .encabezado-contacto{
+    grid-area: contactanos;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  h3{
+    background-color: wheat;
+    opacity: 95%;
+    border-radius: 10px;
+    padding: 1%;
+    border: 3px solid black;
+    margin-bottom: 2%;
+  }
+  img{
+    grid-area: imagen;
+    display: flex;
+    width: 500px;
+    height: justify;
+    justify-self:flex-end;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .redes-sociales {
+    grid-area: redes;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+}
+
+/*--Seccion ubicacion*/
+  .ubicacion {
+    grid-area: ubicacion;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  iframe {
+  border-radius: 20px;
+  box-shadow: 5px 5px black;
+  padding-top: 2%;
+  }
+}
+
+/*--Seccion sugerencias*/
+  .sugerencias{
+    grid-area: sugerencias;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1em;
+  textarea {
+    box-shadow: 7px 7px black;
+    border-radius: 10px;
+    width: 50vh;
+  }
+  input { 
+    box-shadow: 3px 3px black;
+    }
+}

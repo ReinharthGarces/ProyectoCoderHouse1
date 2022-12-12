@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Planilla de solictud para la adopcion de tu nuevo amigo">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Pacifico&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/styles.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <title>FormularioDeAdopción</title>
+  <title>Formulario De Adopción</title>
 </head>
 
 <body>
@@ -18,10 +18,10 @@
   <h1>Gatos&Perros</h1>
   <nav>
     <ul>
-      <li><a href="../index.html">Inicio</a></li>
-      <li><a href="gatos.html">Gatos</a></li>
-      <li><a href="perros.html">Perros</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="../index.html" class="text-decoration-none text-reset">Inicio</a></li>
+      <li><a href="gatos.html" class="text-decoration-none text-reset">Gatos</a></li>
+      <li><a href="perros.html" class="text-decoration-none text-reset">Perros</a></li>
+      <li><a href="contacto.html" class="text-decoration-none text-reset">Contacto</a></li>
     </ul>
   </nav>
 </header>
@@ -30,7 +30,7 @@
   <main>
   <form class="formulario-container" data-aos="fade-up">
     <h2>Formulario De Adopción</h2>
-      <seccion class="formulario-parte1">
+      <seccion class="formulario-partes">
         <h4>1.Datos Personales</h4>
         <div>
           <label for="Nombre y apellido">Nombre y Apellido:</label>
@@ -60,46 +60,55 @@
 
 
   <!--Inicio parte 2 del Formulario de Adopción-->
-    <seccion class="formulario-parte2">
+    <seccion class="formulario-partes">
       <h4>2.Referencias Personales</h4>
-      <div>
-        <label for="Referencia personal 1">Referencia Personal:</label>
+      <div class="referencias">
+        <label for="Referencia personal 1">Nombre:</label>
         <input id="Referencia personal 1" type="text" name="Referencia personal 1">
-        <label for="Telefono 1">Telefono:</label>
-        <input id="Telefono 1" type="tel" name="Telefono 1">
 
-        <label for="Relación o Parentesco 1">Relación o Parentesco:</label>
-        <select name="Relación o Parentesco 1" id="Relación o Parentesco 1">
-        <option value="Amigo">Amigo</option>
-        <option value="Pareja">Pareja</option>
-        <option value="Compañero de trabajo">Compañero de trabajo</option>
-        <option value="Vecino">Vecino</option>
-        <option value="Otro">Otro</option>
-        </select> 
+        <span class="telefono">
+          <label for="Telefono 1">Tel:</label>
+          <input id="Telefono 1" type="tel" name="Telefono 1">
+        </span>
+        
+        <span class="vinculo">
+          <label for="Relación o Parentesco 1">Vinculo:</label>
+          <select name="Relación o Parentesco 1" id="Relación o Parentesco 1">
+          <option value="Amigo">Amigo</option>
+          <option value="Pareja">Pareja</option>
+          <option value="Compañero de trabajo">Compañero de trabajo</option>
+          <option value="Vecino">Vecino</option>
+          <option value="Otro">Otro</option>
+          </select> 
+        </span>
       </div>  
 
-      <div>
-        <label for="Referencia personal 2">Referencia Personal:</label>
+      <div class="referencias">
+        <label for="Referencia personal 2">Nombre:</label>
         <input id="Referencia personal 2" type="text" name="Referencia personal 2">
 
-        <label for="Telefono 2">Telefono:</label>
-        <input id="Telefono 2" type="tel" name="Telefono 2">
+        <span class="telefono">
+          <label for="Telefono 2">Tel:</label>
+          <input id="Telefono 2" type="tel" name="Telefono 2">
+        </span>
 
-        <label for="Relación o Parentesco 2">Relación o Parentesco:</label>
-        <select name="Relación o Parentesco 2" id="Relación o Parentesco 2">
-        <option value="Amigo">Amigo</option>
-        <option value="Pareja">Pareja</option>
-        <option value="Compañero de trabajo">Compañero de trabajo</option>
-        <option value="Vecino">Vecino</option>
-        <option value="Otro">Otro</option>
-        </select> 
+        <span class="vinculo ">
+          <label for="Relación o Parentesco 2">Vinculo:</label>
+          <select name="Relación o Parentesco 2" id="Relación o Parentesco 2">
+          <option value="Amigo">Amigo</option>
+          <option value="Pareja">Pareja</option>
+          <option value="Compañero de trabajo">Compañero de trabajo</option>
+          <option value="Vecino">Vecino</option>
+          <option value="Otro">Otro</option>
+          </select> 
+        </span>
       </div>
     </seccion>
 
 
 <!--Inicio parte 3 del Formulario de Adopción-->
-    <seccion class="formulario-parte3">
-      <h4>3. Domicilio</h4>
+    <seccion class="formulario-partes">
+      <h4>3.Domicilio</h4>
       <div>
         <h5>¿Que tipo de domicilio tienes?</h5>
         <label for="Propiedad horizontal">PH</label>
@@ -131,8 +140,8 @@
       </div>
 
       <div>
-        <h5>¿Donde nos conociste y porque quieres adoptar una mascota'</h5>
-        <textarea name="Sobre ti" id="Sobre ti" cols="40" rows="15"></textarea>
+        <h5>¿Donde nos conociste y porque quieres adoptar una mascota?</h5>
+        <textarea name="Sobre ti" id="sobre-ti" cols="40" rows="15"></textarea>
       </div>
       <input type="submit" value="Enviar">
       <input type="reset" value="Borrar">

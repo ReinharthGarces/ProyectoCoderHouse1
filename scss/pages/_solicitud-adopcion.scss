@@ -1,0 +1,101 @@
+
+/*--Inicio de formulario*/
+.formulario-container {
+    display: grid;
+    background-color: wheat;
+    opacity: 95%;
+    margin: 20vh;
+    height: justify;
+    padding: 10vh;
+    margin-bottom: 10vh;
+    border-radius: 20px;
+    border: 3px solid black;
+    row-gap: 2em;
+  h2{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px white;
+  }
+  h4{
+    font-family: 'Pacifico', cursive;
+    text-align: justify;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px white;
+    padding: 5px;
+  }
+  h5{
+    text-align: justify;
+    font-size: 1.2rem;
+    padding: 1%;
+  }
+  div{
+    padding: 8px;
+  }
+}
+
+.formulario-partes{
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 2em;
+}
+
+/*--Inicio del formulario de adopcion para Tabs--*/
+@media (min-width: 768px) and (max-width: 1200px){
+  .formulario-container {
+    margin: 10vh;
+    h5{
+      text-align: start;
+      padding: 1%;
+    }
+    div{
+      padding: 2%;
+    }
+  }
+  .telefono{
+    display: block;
+    padding: 2%;
+  }
+}
+
+/*--Inicio del formulario de adopcion para Telefono--*/
+@media (min-width: 320px) and (max-width: 767px){
+  .formulario-container{
+    margin: 3vh;
+    padding: 3vh;
+    text-align: center;
+    font-size:smaller;
+    h2{
+      font-size: 1.2rem;
+      text-align: justify;
+      text-shadow: 1px 1px white;
+    }
+    h4{
+      text-align: center;
+      font-size: 1.1rem;
+      text-shadow: 1px 1px white;
+      padding: 1px;
+    }
+    div{
+      padding: 1%;
+    } 
+    h5{
+      text-align: center;
+      font-size: 1rem;
+      padding: 1%;
+    }   
+  }
+  
+  #sobre-ti{
+    width: 45vw;
+    height: 20vh;
+  }
+  .telefono{
+    display: block;
+    padding: 1%;
+  }
+  .formulario-partes{
+    padding: 1rem;
+    overflow: auto;
+  }
+} 
