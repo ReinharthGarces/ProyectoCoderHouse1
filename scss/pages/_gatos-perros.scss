@@ -5,10 +5,10 @@
     row-gap: 10vh;
     margin: 5vh;
   h2{
-    font-family: 'Pacifico', cursive;
+    font-family: $first-font;
     text-align: center;
     font-size: 2.5rem;
-    text-shadow: 1.5px 1.5px wheat;
+    text-shadow: 1.5px 1.5px $second-color;
   }
 }
   .tarjetas{
@@ -20,19 +20,19 @@
     "descripcion descripcion"
     "informacion imagen"
     "caracteristicas solicitud";
-    background-color: wheat;
+    background-color: $second-color;
     opacity: 95%;
     border: 5px solid black;
     border-radius: 20px;
   h3{
-    font-family: 'Pacifico', cursive;
+    font-family: $first-font;
     font-size: 1.5rem;
     grid-area: descripcion;
     display: flex;
     align-items: flex-end;
     text-align: start;
     padding-left: 25%;
-    text-shadow: 1.5px 1.5px wheat;
+    text-shadow: 1.5px 1.5px $second-color;
   }
   p{
     grid-area: informacion;
@@ -72,7 +72,7 @@
     box-shadow: 5px 5px black;
   }
   button:hover{
-    background-color: rgba(235,55,3,1);
+    background-color: $third-color;
     opacity: 95%;
   }
 }
@@ -96,10 +96,10 @@
       row-gap: 2vh;
       justify-content: center;
     h2 {
-      font-family: 'Pacifico', cursive;
+      font-family: $first-font;
       text-align: center;
       font-size: 2.5rem;
-      text-shadow: 1.2px 1.2px wheat;
+      text-shadow: 1.2px 1.2px ;
     }
   }
     .tarjetas{

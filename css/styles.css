@@ -62,7 +62,6 @@ header ul li:hover {
   header nav {
     display: flex;
     align-items: flex-start;
-    font-size: 0.9rem;
     text-shadow: 0.8px 0.8px wheat;
   }
   header ul li {
@@ -100,7 +99,7 @@ footer div {
   footer {
     flex-direction: column;
     font-size: 0.9rem;
-    padding: 40px 20px;
+    padding: 20px 20px;
     gap: 20px;
   }
   footer p {
@@ -109,152 +108,191 @@ footer div {
     justify-content: flex-start;
   }
 }
-/*--Sobre Nosotros--*/
+/*--Inicio del Index--*/
 .nosotros {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  padding: 100px;
+  margin: 15vh;
 }
 .nosotros h2 {
-  font-family: "Pacifico", cursive;
+  font-family: "pacifico", cursive;
   text-align: center;
   font-size: 3rem;
-  padding-bottom: 30px;
+  padding-bottom: 5vh;
   text-shadow: 1.5px 1.5px wheat;
 }
 .nosotros p {
-  padding: 10px;
-  font-size: 1.3rem;
+  padding: 6vh;
+  font-size: 1.4rem;
 }
 
 /*--Tarjetas de imagenes--*/
-.tarjeta1 {
-  display: inline-block;
-  height: 250px;
-  width: 45%;
-  border-color: black;
+.tarjetas-inicio {
+  display: flex;
+  justify-content: space-around;
+  height: justify;
+  width: justify;
+  margin: 10vh 5vh;
 }
-.tarjeta1 img {
-  width: 50%;
+.tarjetas-inicio img {
   display: inline-block;
-  margin-left: 250px;
-  border-radius: 30px;
-  border: 2px solid #E14D2A;
-  box-shadow: 5px 5px #E14D2A;
-}
-
-.tarjeta2 {
-  display: inline-block;
-  height: 250px;
-  width: 45%;
-  border-color: black;
-}
-.tarjeta2 img {
-  width: 50%;
-  display: inline-block;
-  margin-left: 250px;
-  border-radius: 30px;
+  width: 45vh;
+  border-radius: 20px;
   border: 2px solid #E14D2A;
   box-shadow: 5px 5px #E14D2A;
 }
 
 /*--Creando Hogares--*/
-.hogares {
-  margin: 0vh 8vh;
-}
-.hogares h2 {
-  margin-top: 100px;
+.creando-hogares {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  font-family: "Pacifico", cursive;
+  margin: 7vh;
+}
+.creando-hogares h2 {
+  margin-top: 100px;
+  font-family: "pacifico", cursive;
   font-size: 3rem;
-  padding-bottom: 30px;
+  padding-bottom: 5vh;
   text-shadow: 1.5px 1.5px wheat;
 }
-.hogares p {
-  text-align: center;
-  padding: 20px;
-  margin-bottom: 120px;
-  font-size: 1.3rem;
+.creando-hogares p {
+  padding: 5vh;
+  font-size: 1.4rem;
 }
 
 /*--Tarjetas de ejemplos--*/
-.flex-ejemplos {
+.tarjetas-ejemplos {
   display: flex;
   justify-content: space-around;
+  text-align: center;
+  margin: 6vh 0vh;
 }
 
-.ejemplo1 {
-  display: inline-block;
+.ejemplos {
   background-color: wheat;
   opacity: 95%;
-  text-align: center;
-  margin-left: 100px;
-  margin-right: 40px;
-  width: 270px;
-  height: 400px;
-  border-radius: 30px;
-  border: 5px solid #E14D2A;
+  width: 260px;
+  height: justify;
+  border-radius: 20px;
+  border: 4px solid #E14D2A;
 }
-.ejemplo1 img {
+.ejemplos img {
   width: 85%;
   border-radius: 20px;
+  margin-bottom: 2vh;
   box-shadow: 5px 5px #E14D2A;
 }
-.ejemplo1 article {
-  text-align: center;
-  padding: 20px;
+.ejemplos article {
+  margin: 2vh;
   margin-bottom: 20px;
   font-size: 1.1rem;
 }
 
-.ejemplo2 {
-  display: inline-block;
-  background-color: wheat;
-  opacity: 95%;
-  text-align: center;
-  margin-left: 100px;
-  margin-right: 40px;
-  width: 270px;
-  height: 400px;
-  border-radius: 30px;
-  border: 5px solid #E14D2A;
+/*--Inicio Index para Tabs--*/
+@media (min-width: 768px) and (max-width: 1200px) {
+  .nosotros {
+    margin: 8vh;
+  }
+  .nosotros h2 {
+    padding-bottom: 2vh;
+    font-size: 2.5rem;
+  }
+  .nosotros p {
+    font-size: 1.3rem;
+  }
+  .tarjetas-inicio {
+    margin: 5vh 2vh;
+  }
+  .tarjetas-inicio img {
+    width: 38vh;
+  }
+  .creando-hogares {
+    margin: 4vh;
+  }
+  .creando-hogares h2 {
+    padding-bottom: 2vh;
+    font-size: 2.5rem;
+  }
+  .creando-hogares p {
+    padding: 2vh;
+    font-size: 1.3rem;
+  }
+  .tarjetas-ejemplos {
+    margin: 8vh 0vh;
+  }
+  .ejemplos {
+    width: 200px;
+  }
+  .ejemplos article {
+    padding: 5px;
+    margin: 1vh;
+    font-size: 1rem;
+  }
 }
-.ejemplo2 img {
-  width: 85%;
-  border-radius: 20px;
-  box-shadow: 5px 5px #E14D2A;
+/*--Inicio tarjetas de animales para Telefonos--*/
+@media (min-width: 320px) and (max-width: 767px) {
+  .nosotros {
+    margin: 5vh;
+  }
+  .nosotros h2 {
+    font-size: 2.1rem;
+    text-shadow: 1px 1px wheat;
+  }
+  .nosotros p {
+    padding: 1vh;
+    font-size: 1rem;
+  }
+  .tarjetas-inicio {
+    flex-direction: column;
+    align-items: center;
+    margin: 2vh;
+    padding-bottom: 3%;
+  }
+  .tarjetas-inicio img {
+    width: 75vw;
+    margin-bottom: 3vh;
+    box-shadow: 3px 3px #E14D2A;
+  }
+  .creando-hogares {
+    margin: 2vh;
+  }
+  .creando-hogares h2 {
+    margin-top: 2vh;
+    font-size: 2.1rem;
+    text-shadow: 1px 1px wheat;
+  }
+  .creando-hogares p {
+    font-size: 1rem;
+    padding: 1vh;
+  }
+  .tarjetas-ejemplos {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 5vh;
+    margin: 4vh 0vh;
+  }
+  .ejemplos {
+    width: 70vw;
+    height: justify;
+    margin-bottom: 5vh;
+    border-radius: 20px;
+    border: 2px solid #E14D2A;
+  }
+  .ejemplos img {
+    width: 75%;
+    border-radius: 20px;
+    margin-bottom: 1vh;
+    box-shadow: 3px 3px #E14D2A;
+  }
+  .ejemplos article {
+    margin: 1vh;
+    padding: 10px;
+  }
 }
-.ejemplo2 article {
-  text-align: center;
-  padding: 20px;
-  margin-bottom: 20px;
-  font-size: 1.1rem;
-}
-
-.ejemplo3 {
-  display: inline-block;
-  background-color: wheat;
-  opacity: 95%;
-  text-align: center;
-  margin-left: 100px;
-  margin-right: 40px;
-  width: 270px;
-  height: 400px;
-  border-radius: 30px;
-  border: 5px solid #E14D2A;
-}
-.ejemplo3 img {
-  width: 85%;
-  height: 38%;
-  border-radius: 20px;
-  box-shadow: 5px 5px #E14D2A;
-}
-.ejemplo3 article {
-  text-align: center;
-  padding: 20px;
-  margin-bottom: 20px;
-  font-size: 1.1rem;
-}
-
 /*--Tarjetas de animales--*/
 .grid-container {
   display: grid;
@@ -262,7 +300,7 @@ footer div {
   margin: 5vh;
 }
 .grid-container h2 {
-  font-family: "Pacifico", cursive;
+  font-family: "pacifico", cursive;
   text-align: center;
   font-size: 2.5rem;
   text-shadow: 1.5px 1.5px wheat;
@@ -280,7 +318,7 @@ footer div {
   border-radius: 20px;
 }
 .tarjetas h3 {
-  font-family: "Pacifico", cursive;
+  font-family: "pacifico", cursive;
   font-size: 1.5rem;
   grid-area: descripcion;
   display: flex;
@@ -349,10 +387,10 @@ footer div {
     justify-content: center;
   }
   .grid-container h2 {
-    font-family: "Pacifico", cursive;
+    font-family: "pacifico", cursive;
     text-align: center;
     font-size: 2.5rem;
-    text-shadow: 1.2px 1.2px wheat;
+    text-shadow: 1.2px 1.2px;
   }
   .tarjetas {
     height: 50vh;
@@ -386,7 +424,6 @@ footer div {
 }
 /*--Inicio seccion de contacto*/
 .grid-contacto {
-  height: 80vh;
   display: grid;
   grid-template-rows: 10% 70% 20%;
   grid-template-columns: 1fr 1fr;
@@ -404,7 +441,6 @@ footer div {
   grid-area: contactanos;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 10px;
 }
@@ -414,22 +450,19 @@ footer div {
   border-radius: 10px;
   padding: 1%;
   border: 3px solid black;
-  margin-bottom: 2%;
 }
 .grid-contacto img {
   grid-area: imagen;
   display: flex;
-  width: 500px;
+  width: 90%;
+  align-self: center;
   height: justify;
-  justify-self: flex-end;
-  border-radius: 20px;
   padding: 10px;
 }
 .grid-contacto .redes-sociales {
   grid-area: redes;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 10px;
 }
@@ -441,7 +474,6 @@ footer div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
 }
 .ubicacion iframe {
   border-radius: 20px;
@@ -467,6 +499,50 @@ footer div {
   box-shadow: 3px 3px black;
 }
 
+/*--Inicio Contacto para Tabs--*/
+@media (min-width: 768px) and (max-width: 1200px) {
+  .grid-contacto {
+    margin: 4vh;
+    padding: 4vh;
+    row-gap: 2%;
+    font-size: 1.5rem;
+  }
+  .ubicacion {
+    padding: 5%;
+    row-gap: 2%;
+  }
+  .ubicacion iframe {
+    width: 80%;
+    align-self: center;
+  }
+  .sugerencias {
+    margin-bottom: 5vh;
+  }
+}
+/*--Inicio Contacto para Telefonos--*/
+@media (min-width: 320px) and (max-width: 767px) {
+  .grid-contacto {
+    display: flex;
+    flex-direction: column;
+    margin: 3vh;
+    padding: 3vh;
+    font-size: 1.45rem;
+  }
+  .grid-contacto h3 {
+    text-align: center;
+  }
+  .redes-sociales {
+    text-align: center;
+  }
+  .ubicacion iframe {
+    width: 65vw;
+    height: 35vh;
+  }
+  .sugerencias textarea {
+    width: 65vw;
+    height: 35vh;
+  }
+}
 /*--Inicio de formulario*/
 .formulario-container {
   display: grid;
@@ -508,6 +584,15 @@ footer div {
   padding: 2em;
 }
 
+#button-textarea {
+  border-radius: 10px;
+  box-shadow: 2px 2px black;
+}
+#button-textarea:hover {
+  background-color: rgb(235, 55, 3);
+  opacity: 95%;
+}
+
 /*--Inicio del formulario de adopcion para Tabs--*/
 @media (min-width: 768px) and (max-width: 1200px) {
   .formulario-container {
@@ -535,7 +620,6 @@ footer div {
   }
   .formulario-container h2 {
     font-size: 1.2rem;
-    text-align: justify;
     text-shadow: 1px 1px white;
   }
   .formulario-container h4 {

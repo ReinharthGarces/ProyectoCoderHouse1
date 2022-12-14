@@ -2,14 +2,14 @@
 header{
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(90deg, rgba(235,55,3,1) 26%, rgba(252,152,5,1) 66%, rgba(255,186,0,1) 100%);
+    background: $first-gradient;
     padding: 50px;
     padding-bottom: 25px;
     border: 3px solid black;
   h1{
     align-items: center;
     font-size: 2.7rem;
-    text-shadow: 1.5px 1.5px wheat;
+    text-shadow: 1.5px 1.5px $second-color;
     padding-bottom: 20px;
     display: inline-block;
     font-family: $first-font;
@@ -18,7 +18,7 @@ header{
     display: flex;
     align-items: flex-end;
     font-size: 1rem;
-    text-shadow: 1.1px 1.1px wheat;
+    text-shadow: 1.1px 1.1px $second-color;
   }
   ul li{
     display: inline-block;
@@ -28,7 +28,7 @@ header{
     box-shadow: 3px 3px black;
   }
   ul li:hover{
-  background-color: wheat;
+  background-color: $second-color;
   opacity: 95%;
   }
 } 
@@ -43,8 +43,7 @@ header{
   nav{
       display: flex;
       align-items: flex-start;
-      font-size: 0.9rem;
-      text-shadow: 0.8px 0.8px wheat;
+      text-shadow: 0.8px 0.8px $second-color;
     }
   ul li{
       display: inline-block;
@@ -54,7 +53,7 @@ header{
       box-shadow: 2px 2px black;
     }
   ul li:hover{
-    background-color: wheat;
+    background-color: $second-color;
     opacity: 95%;
     }
   }

@@ -1,7 +1,6 @@
 
 /*--Inicio seccion de contacto*/
 .grid-contacto {
-    height: 80vh;
     display: grid;
     grid-template-rows: 10% 70% 20%;
     grid-template-columns: 1fr 1fr;
@@ -22,32 +21,28 @@
     grid-area: contactanos;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 10px;
   }
   h3{
-    background-color: wheat;
+    background-color: $second-color;
     opacity: 95%;
     border-radius: 10px;
     padding: 1%;
     border: 3px solid black;
-    margin-bottom: 2%;
   }
   img{
     grid-area: imagen;
     display: flex;
-    width: 500px;
+    width:90%;
+    align-self: center;
     height: justify;
-    justify-self:flex-end;
-    border-radius: 20px;
     padding: 10px;
   }
   .redes-sociales {
     grid-area: redes;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 10px;
   }
@@ -60,7 +55,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
   iframe {
   border-radius: 20px;
   box-shadow: 5px 5px black;
@@ -85,3 +79,54 @@
     box-shadow: 3px 3px black;
     }
 }
+
+
+  /*--Inicio Contacto para Tabs--*/
+  @media (min-width: 768px) and (max-width: 1200px) {
+    .grid-contacto{
+      margin: 4vh;
+      padding: 4vh;
+      row-gap: 2%;
+      font-size: 1.5rem;
+    }
+    .ubicacion{
+    padding: 5%;
+    row-gap: 2%;
+    iframe{
+      width: 80%;
+      align-self: center;
+      }
+    }
+    .sugerencias{
+      margin-bottom: 5vh;
+    }
+}
+
+  /*--Inicio Contacto para Telefonos--*/
+  @media (min-width: 320px) and (max-width: 767px){
+    .grid-contacto{
+      display: flex;
+      flex-direction: column;
+      margin: 3vh;
+      padding: 3vh;
+      font-size: 1.45rem;
+      h3{
+        text-align: center;
+      }
+    }
+    .redes-sociales{
+      text-align: center;
+    }
+    .ubicacion{
+      iframe{
+        width: 65vw;
+        height: 35vh;
+      }
+    }
+    .sugerencias{
+      textarea{
+        width: 65vw;
+        height: 35vh;
+      }
+    }
+  }
