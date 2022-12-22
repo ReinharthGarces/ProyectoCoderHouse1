@@ -10,7 +10,7 @@ a {
 }
 
 body {
-  background-image: url(.././img/posibles-fondos/posible-fondo4.png);
+  background-image: url(../../img/posibles-fondos/posible-fondo5.png);
   background-position: center;
   background-attachment: fixed;
   background-size: 70vh;
@@ -92,6 +92,14 @@ footer p {
 }
 footer div {
   text-align: end;
+}
+footer #button-enviar {
+  border-radius: 10px;
+  box-shadow: 2px 2px black;
+}
+footer #button-enviar:hover {
+  background-color: rgb(235, 55, 3);
+  opacity: 95%;
 }
 
 /*--Inicio footer para Telefonos--*/
@@ -177,6 +185,7 @@ footer div {
   height: justify;
   border-radius: 20px;
   border: 4px solid #E14D2A;
+  padding: 1%;
 }
 .ejemplos img {
   width: 85%;
@@ -297,7 +306,7 @@ footer div {
 .grid-container {
   display: grid;
   row-gap: 10vh;
-  margin: 5vh;
+  margin: 8vh;
 }
 .grid-container h2 {
   font-family: "pacifico", cursive;
@@ -394,7 +403,7 @@ footer div {
   }
   .tarjetas {
     height: 50vh;
-    width: 41vh;
+    width: 37vh;
     display: flex;
     flex-direction: column;
     overflow: auto;

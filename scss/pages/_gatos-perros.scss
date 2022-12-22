@@ -3,7 +3,7 @@
 .grid-container {
     display: grid;
     row-gap: 10vh;
-    margin: 5vh;
+    margin: 8vh;
   h2{
     font-family: $first-font;
     text-align: center;
@@ -104,7 +104,7 @@
   }
     .tarjetas{
       height: 50vh;
-      width: 41vh;
+      width: 37vh;
       display: flex;
       flex-direction: column;
       overflow: auto;

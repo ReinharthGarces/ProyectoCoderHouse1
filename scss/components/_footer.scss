@@ -14,6 +14,14 @@ footer{
   div{
     text-align: end;
   }
+  #button-enviar{   
+    border-radius: 10px;
+    box-shadow: 2px 2px black;
+  &:hover{
+    background-color: $third-color;
+    opacity: 95%;
+  }
+}
 }
 
 /*--Inicio footer para Telefonos--*/
