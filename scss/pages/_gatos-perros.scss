@@ -3,7 +3,7 @@
 .grid-container {
     display: grid;
     row-gap: 10vh;
-    margin: 8vh;
+    margin: 10vh;
   h2{
     font-family: $first-font;
     text-align: center;
@@ -41,7 +41,7 @@
     justify-content: center;
     text-align: center;
     font-size: 1.1rem;
-    padding: 15px;
+    padding: 6%;
   }
   ul{
     grid-area: caracteristicas;
@@ -81,7 +81,7 @@
   /*--Inicio tarjetas de animales para Tabs--*/
   @media (min-width: 768px) and (max-width: 1200px) {
     .tarjetas img {
-      width: 280px;
+      width: 260px;
       height: 180px;
   }
   .tarjetas p {
