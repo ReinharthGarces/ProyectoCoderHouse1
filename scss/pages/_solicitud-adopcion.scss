@@ -4,9 +4,10 @@
     display: grid;
     background-color: $second-color;
     opacity: 95%;
-    margin: 20vh;
+    margin: 30vh;
     height: justify;
     padding: 10vh;
+    text-align: center;
     margin-bottom: 10vh;
     border-radius: 20px;
     border: 3px solid black;
@@ -19,13 +20,13 @@
   }
   h4{
     font-family: 'Pacifico', cursive;
-    text-align: justify;
+    text-align: center;
     font-size: 1.5rem;
     text-shadow: 2px 2px white;
     padding: 5px;
   }
   h5{
-    text-align: justify;
+    text-align: center;
     font-size: 1.2rem;
     padding: 1%;
   }
@@ -50,9 +51,8 @@
 /*--Inicio del formulario de adopcion para Tabs--*/
 @media (min-width: 768px) and (max-width: 1200px){
   .formulario-container {
-    margin: 10vh;
+    margin: 15vh;
     h5{
-      text-align: start;
       padding: 1%;
     }
     div{
@@ -68,16 +68,14 @@
 /*--Inicio del formulario de adopcion para Telefono--*/
 @media (min-width: 320px) and (max-width: 767px){
   .formulario-container{
-    margin: 3vh;
-    padding: 3vh;
-    text-align: center;
+    margin: 7vh;
+    padding: 5vh;
     font-size:smaller;
     h2{
       font-size: 1.2rem;
       text-shadow: 1px 1px white;
     }
     h4{
-      text-align: center;
       font-size: 1.1rem;
       text-shadow: 1px 1px white;
       padding: 1px;
@@ -86,7 +84,6 @@
       padding: 1%;
     } 
     h5{
-      text-align: center;
       font-size: 1rem;
       padding: 1%;
     }   

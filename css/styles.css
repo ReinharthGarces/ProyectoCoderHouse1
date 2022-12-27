@@ -557,9 +557,10 @@ footer #button-enviar:hover {
   display: grid;
   background-color: wheat;
   opacity: 95%;
-  margin: 20vh;
+  margin: 30vh;
   height: justify;
   padding: 10vh;
+  text-align: center;
   margin-bottom: 10vh;
   border-radius: 20px;
   border: 3px solid black;
@@ -573,13 +574,13 @@ footer #button-enviar:hover {
 }
 .formulario-container h4 {
   font-family: "Pacifico", cursive;
-  text-align: justify;
+  text-align: center;
   font-size: 1.5rem;
   text-shadow: 2px 2px white;
   padding: 5px;
 }
 .formulario-container h5 {
-  text-align: justify;
+  text-align: center;
   font-size: 1.2rem;
   padding: 1%;
 }
@@ -605,10 +606,9 @@ footer #button-enviar:hover {
 /*--Inicio del formulario de adopcion para Tabs--*/
 @media (min-width: 768px) and (max-width: 1200px) {
   .formulario-container {
-    margin: 10vh;
+    margin: 15vh;
   }
   .formulario-container h5 {
-    text-align: start;
     padding: 1%;
   }
   .formulario-container div {
@@ -622,9 +622,8 @@ footer #button-enviar:hover {
 /*--Inicio del formulario de adopcion para Telefono--*/
 @media (min-width: 320px) and (max-width: 767px) {
   .formulario-container {
-    margin: 3vh;
-    padding: 3vh;
-    text-align: center;
+    margin: 7vh;
+    padding: 5vh;
     font-size: smaller;
   }
   .formulario-container h2 {
@@ -632,7 +631,6 @@ footer #button-enviar:hover {
     text-shadow: 1px 1px white;
   }
   .formulario-container h4 {
-    text-align: center;
     font-size: 1.1rem;
     text-shadow: 1px 1px white;
     padding: 1px;
@@ -641,7 +639,6 @@ footer #button-enviar:hover {
     padding: 1%;
   }
   .formulario-container h5 {
-    text-align: center;
     font-size: 1rem;
     padding: 1%;
   }
