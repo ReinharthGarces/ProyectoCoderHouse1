@@ -26,6 +26,7 @@
   }
   h3{
     background-color: $second-color;
+    font-family: cursive;
     opacity: 95%;
     border-radius: 10px;
     padding: 1%;
@@ -41,6 +42,7 @@
   }
   .redes-sociales {
     grid-area: redes;
+    font-family: cursive;
     display: flex;
     flex-direction: column;
     align-items: center;

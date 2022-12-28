@@ -10,7 +10,7 @@ a {
 }
 
 body {
-  background-image: url(../../img/posibles-fondos/posible-fondo5.png);
+  background-image: url(../.././img/posibles-fondos/posible-fondo5.png);
   background-position: center;
   background-attachment: fixed;
   background-size: 70vh;
@@ -35,6 +35,7 @@ header h1 {
 }
 header nav {
   display: flex;
+  font-family: cursive;
   align-items: flex-end;
   font-size: 1rem;
   text-shadow: 1.1px 1.1px wheat;
@@ -327,14 +328,14 @@ footer #button-enviar:hover {
   border-radius: 20px;
 }
 .tarjetas h3 {
-  font-family: "pacifico", cursive;
+  font-family: cursive;
   font-size: 1.5rem;
   grid-area: descripcion;
   display: flex;
   align-items: flex-end;
   text-align: start;
   padding-left: 25%;
-  text-shadow: 1.5px 1.5px wheat;
+  text-shadow: 1.5px 1.5px white;
 }
 .tarjetas p {
   grid-area: informacion;
@@ -455,6 +456,7 @@ footer #button-enviar:hover {
 }
 .grid-contacto h3 {
   background-color: wheat;
+  font-family: cursive;
   opacity: 95%;
   border-radius: 10px;
   padding: 1%;
@@ -470,6 +472,7 @@ footer #button-enviar:hover {
 }
 .grid-contacto .redes-sociales {
   grid-area: redes;
+  font-family: cursive;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -573,7 +576,7 @@ footer #button-enviar:hover {
   text-shadow: 2px 2px white;
 }
 .formulario-container h4 {
-  font-family: "Pacifico", cursive;
+  font-family: cursive;
   text-align: center;
   font-size: 1.5rem;
   text-shadow: 2px 2px white;
