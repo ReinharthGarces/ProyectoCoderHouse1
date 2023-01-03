@@ -435,14 +435,14 @@ footer #button-enviar:hover {
 /*--Inicio seccion de contacto*/
 .grid-contacto {
   display: grid;
-  grid-template-rows: 10% 70% 20%;
+  grid-template-rows: 10% 25% 25% 25%;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "contactanos contactanos" "imagen redes" "ubicacion ubicacion" "sugerencias sugerencias";
-  row-gap: 3em;
+  row-gap: 1.8em;
   width: auto;
   height: auto;
   margin: 5% 10%;
-  padding: 50px;
+  padding: 30px;
   font-size: 2rem;
   font-family: "pacifico", cursive;
   text-shadow: 2px 2px white;
@@ -465,10 +465,10 @@ footer #button-enviar:hover {
 .grid-contacto img {
   grid-area: imagen;
   display: flex;
-  width: 90%;
+  width: 80%;
   align-self: center;
   height: justify;
-  padding: 10px;
+  padding: 8px;
 }
 .grid-contacto .redes-sociales {
   grid-area: redes;
@@ -476,6 +476,7 @@ footer #button-enviar:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 10px;
 }
 
